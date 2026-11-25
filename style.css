@@ -1,0 +1,323 @@
+/* Basic reset so spacing looks consistent across browsers */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background-color: #fff9f6;
+  color: #4a3228;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Headings use a classic serif font for a warm bakery feel */
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #5c2c35;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #fce4ec;
+  border-bottom: 2px solid #f0b7c7;
+  padding: 18px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo h1 {
+  font-size: 26px;
+}
+
+.tagline {
+  font-size: 13px;
+  color: #8a5661;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5c2c35;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #c95b73;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #fff0f4;
+  text-align: center;
+  padding: 55px 20px;
+  border-bottom: 1px solid #f2d5de;
+}
+
+.hero h2 {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.hero p {
+  max-width: 620px;
+  margin: 0 auto 24px auto;
+  font-size: 16px;
+}
+
+/* Simple Buttons */
+.btn {
+  display: inline-block;
+  background-color: #d46a7e;
+  color: #ffffff;
+  padding: 10px 22px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #b85266;
+}
+
+.btn-small {
+  background-color: #f4c7d3;
+  color: #4a3228;
+  border: 1px solid #d46a7e;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.btn-small:hover {
+  background-color: #eab0c0;
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 45px 0;
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.section-intro {
+  margin-bottom: 20px;
+  color: #6f4e45;
+}
+
+.filter-buttons {
+  margin-bottom: 25px;
+}
+
+.filter-btn {
+  background-color: #ffffff;
+  color: #4a3228;
+  border: 1px solid #dfb5c1;
+  padding: 7px 15px;
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #d46a7e;
+  color: #ffffff;
+  border-color: #d46a7e;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.menu-card {
+  background-color: #ffffff;
+  border: 1px solid #eed6dd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 280px;
+  text-align: left;
+}
+
+.food-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.menu-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.menu-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #b85266;
+  margin-bottom: 0;
+}
+
+.special-box {
+  background-color: #fdf0d5;
+  border: 1px dashed #d4a373;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 30px auto 0 auto;
+  max-width: 600px;
+}
+
+/* About Section */
+.about-section {
+  background-color: #fdf2f5;
+  padding: 45px 0;
+  border-top: 1px solid #f2d5de;
+  border-bottom: 1px solid #f2d5de;
+}
+
+.about-section h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.about-section p {
+  margin-bottom: 20px;
+}
+
+.hours-box {
+  background-color: #ffffff;
+  border: 1px solid #eed6dd;
+  border-radius: 6px;
+  padding: 16px 20px;
+  max-width: 420px;
+}
+
+.hours-box h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.hours-box p {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 45px 0;
+}
+
+.contact-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-info h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 260px;
+  background-color: #ffffff;
+  border: 1px solid #eed6dd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 9px;
+  margin-bottom: 14px;
+  border: 1px solid #d9bfc6;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.form-status {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Footer */
+footer {
+  background-color: #5c2c35;
+  color: #fce4ec;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 14px;
+}
+
+/* Small screen adjustments */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .menu-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherry Blossom Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <h1>Cherry Blossom Bakery</h1>
+        <p class="tagline">Freshly baked every morning</p>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Warm Bread, Sweet Cakes &amp; Cozy Mornings</h2>
+      <p>
+        Welcome to Cherry Blossom Bakery, your friendly neighborhood bakehouse.
+        We bake small batches of breads, pastries, and seasonal cherry blossom treats
+        using simple, real ingredients.
+      </p>
+      <a href="#menu" class="btn">View Our Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <h2>Our Daily Menu</h2>
+      <p class="section-intro">Click a category below to filter our fresh bakes.</p>
+
+      <!-- Simple Category Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" onclick="filterMenu('all', this)">All</button>
+        <button class="filter-btn" onclick="filterMenu('cakes', this)">Cakes</button>
+        <button class="filter-btn" onclick="filterMenu('pastries', this)">Pastries</button>
+        <button class="filter-btn" onclick="filterMenu('bread', this)">Bread</button>
+      </div>
+
+      <!-- Menu Cards -->
+      <div class="menu-grid">
+        <div class="menu-card" data-category="cakes">
+          <div class="food-icon">&#127856;</div>
+          <h3>Sakura Strawberry Cake</h3>
+          <p>Soft vanilla sponge with light pink strawberry cream.</p>
+          <p class="price">&#8377;140 / slice</p>
+        </div>
+
+        <div class="menu-card" data-category="pastries">
+          <div class="food-icon">&#129360;</div>
+          <h3>Butter Croissant</h3>
+          <p>Flaky, golden layers made with pure cultured butter.</p>
+          <p class="price">&#8377;90</p>
+        </div>
+
+        <div class="menu-card" data-category="pastries">
+          <div class="food-icon">&#127850;</div>
+          <h3>Cherry Almond Tart</h3>
+          <p>Crisp pastry crust filled with sweet almond cream and cherries.</p>
+          <p class="price">&#8377;130</p>
+        </div>
+
+        <div class="menu-card" data-category="bread">
+          <div class="food-icon">&#127838;</div>
+          <h3>Country Sourdough</h3>
+          <p>Crusty outside, soft and chewy inside. Baked at 6 AM.</p>
+          <p class="price">&#8377;220 / loaf</p>
+        </div>
+
+        <div class="menu-card" data-category="cakes">
+          <div class="food-icon">&#129473;</div>
+          <h3>Pink Blossom Cupcake</h3>
+          <p>Moist almond cupcake topped with cherry buttercream.</p>
+          <p class="price">&#8377;100</p>
+        </div>
+
+        <div class="menu-card" data-category="bread">
+          <div class="food-icon">&#129366;</div>
+          <h3>Honey Milk Bun</h3>
+          <p>Fluffy Japanese-style sweet bun glazed with local honey.</p>
+          <p class="price">&#8377;75</p>
+        </div>
+      </div>
+
+      <!-- Simple Daily Special Note -->
+      <div class="special-box">
+        <p id="special-text">Today's Baker Note: Ask at the counter for warm cinnamon rolls after 9 AM!</p>
+        <button class="btn-small" onclick="showRandomTip()">Another Note</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Our Bakery</h2>
+      <p>
+        Cherry Blossom Bakery started in 2021 as a small corner shop in Warje, Pune.
+        Our family loves baking classic pastries mixed with gentle floral and fruit flavors.
+        Everything on our shelves is mixed by hand and baked fresh each morning—no artificial
+        flavors, just flour, butter, eggs, and care.
+      </p>
+      <div class="hours-box">
+        <h3>Opening Hours</h3>
+        <p>Tuesday – Friday: 7:00 AM – 6:00 PM</p>
+        <p>Saturday – Sunday: 8:00 AM – 4:00 PM</p>
+        <p>Monday: Closed (Resting &amp; prepping dough!)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Order Inquiry Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Visit Us or Send a Message</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Shop Details</h3>
+          <p><strong>Address:</strong> Shop No. 4, Near Mai Mangeshkar Hospital, Warje, Pune, Maharashtra 411058</p>
+          <p><strong>Phone:</strong> +91 98230 12345</p>
+          <p><strong>Email:</strong> hello@cherryblossombakery.local</p>
+          <p>
+            Need a custom birthday cake or a box of pastries for a study group?
+            Send us a quick note using the form!
+          </p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="message">Message or Order Request</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+          <p id="formMessage" class="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Cherry Blossom Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
